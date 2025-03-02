@@ -23,12 +23,12 @@ short_description = (
 
 
 setuptools.setup(
-    name="rmsd",
+    name="pyrmsd",
     version=__version__,
     url="https://github.com/charnley/rmsd",
     python_requires=">=3.8",
     install_requires=[],
-    packages=["rmsd"],
-    entry_points={"console_scripts": ["calculate_rmsd=rmsd.calculate_rmsd:main"]},
+    packages=["pyrmsd"],
+    entry_points={"console_scripts": ["calculate_rmsd=pyrmsd.calculate_rmsd:main"]},
     classifiers=[],
 )

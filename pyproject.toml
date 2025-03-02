@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "rmsd"
+name = "pyrmsd"
 dynamic = ["version"]
 authors = []
 requires-python = ">=3.9"
@@ -31,10 +31,10 @@ Homepage = "https://github.com/charnley/rmsd"
 where="."
 
 [project.scripts]
-calculate_rmsd = "rmsd.calculate_rmsd:main"
+calculate_rmsd = "pyrmsd.calculate_rmsd:main"
 
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.dynamic]
-version = {attr = "rmsd.version.__version__"}
+version = {attr = "pyrmsd.version.__version__"}
